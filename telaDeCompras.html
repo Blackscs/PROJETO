@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">     
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+            
+        }
+
+        body {
+           display: flex;  
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .header {
+            position: fixed;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            background-color: black;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #logo {
+            width: 80px;
+        }
+
+        .conta {
+            color: rgb(247, 247, 247);
+        }
+        
+        .pesquisa{
+            justify-content: center;
+        }
+
+        .pesquisa > #caixaPesquisa{
+            width: 600px;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            
+        }
+
+        .t-b {
+            margin: 100px 5px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 70px;
+            text-align: left;
+        }
+
+        .container-img {
+            margin: 100px 5px 0px 100px;
+        }
+
+        .container-img img{
+            height: 500px;
+            width: 400px;
+        }
+
+        .container-esq p{
+            font-family: 'Poppins';
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .precos {
+            padding: 20px 0px 20px 15px;
+           
+        }
+
+        .precos #antes {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(202, 0, 0);
+        }
+
+        .precos #depois {
+            font-size: 60px;
+            font-weight: bold;
+            color: rgb(0, 136, 23);
+        }
+        
+        .container-botao button {
+            border: 2px solid black;
+            background: none;
+            border-radius: 100px;
+            padding: 10px;
+            font-size: 20px;
+            
+        }
+
+        .versoes {
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+        }
+
+        .versoes p {
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            top: 0;
+            transition: top 1s ease;
+        }
+
+        .versoes p:hover {
+            position: relative;
+            background-color: rgb(193, 193, 255);
+            top: -100;
+            transition: 0.1s;
+            transform: scale(1.08);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header class="header">
+
+        <a href="/"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+
+        <div class="conta">
+            <box-icon name='user' ></box-icon>
+            <i style="color: aliceblue;" class='bx bx-user' ></i>
+            <p>ENTRAR</p>
+        </div>
+
+        <div class="pesquisa">
+            <input id="caixaPesquisa" type="text" placeholder="Encontre seu produto">
+        </div>
+
+    </header>
+
+    <section class="container">
+
+        <section class="container-img">
+            <img src="IMAGENS/iphone-14-pro-max.png" alt="Iphone 14 Pro Max">
+        </section>
+
+        <section class="t-b">
+
+            <div class="container-esq">
+                <p>Apple iPhone 14 Pro Max 128GB Roxo-profundo 6,7” 48MP</p>
+            </div>
+    
+            <div class="precos">
+                <p id="antes">R$ 10.499,00</p>
+                <p id="depois">R$ 7.998,99</p>
+            </div>
+            
+            <p>Armazenamento interno</p>
+
+            <section class="versoes">
+                <p>1TB</p>
+                <p>128GB</p>
+                <p>256GB</p>
+                <p>512GB</p>
+            </section>
+
+            <div class="container-botao">
+                <button>Comprar agora</button>
+            </div>
+
+        </section>
+        
+    </section>
+        
+
+    
+
+
+            
+
+            
+       
+
+</body>
+</html>
