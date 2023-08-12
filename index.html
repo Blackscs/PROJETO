@@ -9,418 +9,187 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">     
 
-    <style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
 
-        h1, body, ul, li, p, a, .bannner, .pesquisa, .footer{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            list-style: none;
-            font-family: 'Poppins';
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 70px;
-            padding: 100px 0px 30px;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .header {
-            position: fixed;
-            display: flex;
-            flex-wrap: wrap;
-            width: 100vw;
-            background-color: black;
-            padding: 20px;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        #logo {
-            width: 80px;
-        }
-
-        .conta {
-            color: white;
-        }
-        
-        .pesquisa{
-            justify-content: center;
-        }
-
-        .pesquisa > #caixaPesquisa{
-            width: 600px;
-            border: none;
-            padding: 10px;
-            border-radius: 20px;
-
-        }
-        
-        .menu {
-            display: flex;
-            
-        }
-
-        .menu ul{
-            display: flex;
-        }
-
-        .menu li {
-            margin-left: 20px;
-        }
-
-        .menu li a {
-            padding: 10px;
-        }
-
-        .banner {
-            display: flex;
-            padding-top:80px;
-            justify-content: center;
-            box-shadow: 1px 1px 200px black;
-        }
-
-        .flex {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0px a;
-            justify-content: center;
-        }
-
-        .grid > .catalogo > h1 {
-            color: rgb(0, 0, 0);
-            height: 200px;
-        }
-
-        .grid > .catalogo > .flex > .elementos{
-            max-width: 200px;
-            margin: 50px 20px;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .grid > .catalogo > .flex > .elementos:hover{
-            transition: 0.3s;
-            box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.47);
-        }
-
-        .grid > .catalogo > .flex > .elementos > .limg {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .grid > .catalogo > .flex > .elementos > p {
-            font-size: 13px;
-            padding: 10px;
-        }
-
-        .grid > .catalogo > .flex > .elementos > div > #preco {
-            font-size: 25px;
-            margin: 0px;
-            color: red;
-        }
-
-        .grid > .catalogo > .flex > .elementos > div > #preco-promo {
-            font-size: 40px;
-            font-weight: bold;
-            margin: 0px;    
-            background-color:  ;
-            color: rgb(0, 172, 0);  
-        }
-
-        .grid > .catalogo > .flex > .elementos > .lbotao {
-            display: flex;
-            justify-content: center;
-        }
-
-        .grid > .catalogo > .flex > .elementos > .lbotao > #botao { 
-            background: none;
-            border: 1px solid black;
-            padding: 12px;
-            font-size: 15px;
-            border-radius: 70px;
-
-        }
-
-        .txt-icon {
-            color: black;
-        }
-
-        #botao:hover {
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .footer {
-            width: 100vw;
-            height: 170px;
-            background-color: black;
-        }
-
-        .barraLateral {
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
-            background-color: rgba(252, 252, 252, 0.5);
-            padding: 30px;
-            padding: 50px;
-        }
-
-        .barraLateral > ul > li {
-            margin-bottom: 40px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 20px;
-        }
-       
-        .icon-menu {
-            color: rgb(2, 2, 2);
-        }
-
-        
-
-
-    </style>
+    <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
+
+    <script src="index.js"></script>
     
-    <header class="header">
+    <header>
 
-        <a href="/"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+        <div class="header-elements">
 
-        <div class="conta">
-            <box-icon name='user' ></box-icon>
-            <i style="color: aliceblue;" class='bx bx-user' ></i>
-            <p>ENTRAR</p>
-        </div>
+            <button id="header-botao-menu-nav"><i class='bx bx-menu'></i></button>
 
-        <div class="pesquisa">
-            <input id="caixaPesquisa" type="text" placeholder="Encontre seu produto">
+            <a href="/"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+    
+            <div class="pesquisa">
+                <input id="caixaPesquisa" type="text" placeholder="Encontre seu produto">
+            </div>
+
         </div>
 
     </header>
-
+    
     <section class="banner">
         <img src="IMAGENS/banner.png" alt="banner">
     </section>
 
-    <section class="grid">
+    <main>
 
-        <section class="barraLateral">
+        <h1>NOTEBOOKS</h1>
 
-            <div class="btn-expandir">
-                <i class="icon-menu"></i>
-            </div>
+        <section class="container">
 
-                <ul>
-                    <li class="item-menu">
-                        <a href="/">
-                            <span class="txt-icon">Notebooks</span>
-                        </a>
-                    </li>
+            <div class="container-catalogo">
                 
-                    <li class="item-menu">
-                        <a href="/">
-                            <span class="txt-icon">Smartphones</span>
-                        </a>
-                    </li>
-
-                    <li class="item-menu">
-                        <a href="/">
-                            <span class="txt-icon">Carrinho</span>  
-                        </a>
-                    </li>
-
-                    <li class="item-menu">
-                        <a href="/">
-                            <span class="txt-icon">Ajuda</span>
-                        </a>
-                    </li>
-                </ul>
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+                
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+                
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+                
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+                
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+                
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+                
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+                
+                <a href="#" class="elementos">
+                    <div class="container-img"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Gaming 3i"></div>
+                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
+                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                    <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                    <button id="botao">Comprar agora</button>
+                </a>
+                
+        </div>
 
         </section>
+       
 
-        <section class="catalogo">
-            <h1>NOTEBOOKS</h1>
-            <section class="flex">
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="IMAGENS/gaming-3i.png" alt="Mackbook Air"></div>
-
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-            </section>
-            <h1>CELULARES</h1>
-            <section class="flex">
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="IMAGENS/iphone-14-pro-max.png" alt="Mackbook Air"></div>
-
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="IMAGENS/iphone.png" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-                <div class="elementos">
-                    <div class="limg"><img style="width: 200px;" src="https://http2.mlstatic.com/D_NQ_NP_2X_801112-MLA46516512347_062021-F.webp" alt="Mackbook Air"></div>
-                    
-                    <p>Apple Macbook Air (13 polegadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM)</p>
-                    <div><h2 id="preco">R$ 5.766</h2></div>
-                    <div><h2 id="preco-promo">R$ 5.766</h2></div>
-                    <div class="lbotao"><button id="botao">Comprar agora</button></div>
-                    
-                </div>
-
-            </section>
+        <h1>CELULARES</h1>
+        <section class="container-catalogo">
+                
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            <a href="telaDeCompras.html" class="elementos">
+                <div class="container-img"><img style="width: 200px;" src="IMAGENS/IphonePreto.png" alt="Iphone 14 Pro Max"></div>
+                <p>Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP</p>
+                <div><h2 id="preco-promo">R$ 5.766</h2></div>
+                <p id="desc"><b>10x</b> de <b>R$ 576,60</b></p>
+                <button id="botao">Comprar agora</button>
+            </a>
+            
         </section>
 
-    </section>
+    </main>
+
         
+
+    
+
     <footer class="footer">
     </footer>
 

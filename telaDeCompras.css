@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+
+body {
+   display: flex;  
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 100vw;
+   height: 100vw;
+}
+
+main {
+    
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 80px;
+}
+
+.conta {
+    color: rgb(247, 247, 247);
+}
+
+.pesquisa{
+    justify-content: center;
+}
+
+.pesquisa > #caixaPesquisa{
+    width: 600px;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.container {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.t-b {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-cores {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 30px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.container-cores img{
+    width: 100px;
+    border: 2px solid black ;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.container-cores a:hover{
+    cursor: pointer;
+}
+
+.container-cores img:hover{
+    border: 10px solid rgb(136, 0, 255);
+    transform: scale3d(1.02, 1.02, 1);
+}
+
+.container-cores .btnOpcao{
+    background: none;
+    border: none;
+}
+
+.container-cores .btnOpcao:hover{
+    cursor: pointer;
+}
+
+.container-img {
+    margin: 30px;
+}
+
+.container-img img{
+    width: 400px;
+    height: 400px;
+}
+
+.container-esq {
+    width: 700px;
+}
+
+.container-esq p{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.precos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 15px;
+   
+}
+
+.precos #antes {
+    font-size: 80%;
+    font-weight: bold;
+    color: rgb(202, 0, 0);
+}
+
+.precos #depois {
+    font-size: 250%;
+    font-weight: bold;
+    color: rgb(0, 136, 23);
+}
+
+.container-botao button {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 250px;
+    font-weight: bold;
+}
+
+.container-botao button:hover{
+    background-color: rgb(0, 91, 0);
+}
+
+.versoes {
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+}
+
+.versoes p {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    top: 0;
+    transition: top 1s ease;
+    font-size: 11px;
+}
+
+.versoes p:hover {
+    position: relative;
+    background-color: rgba(136, 0, 255, 0.2);
+    transition: 0.3s;
+    transform: scale3d(1.06, 1.1, 1);
+}
+
+#arm-int {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#opt:hover {
+    cursor: pointer;
+}
+
+.precoAndButton {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.PIX, .CARTAO {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#descricao {
+    font-size: 12px;
+}
+
+.metodosPagamento .containerMetodos{
+    background-color: gray;
+}
+
+.metodosPagamento #icone {
+    width: 25px;
+    margin: 10px;
+}
+
+.prazoDeEntrega {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.box {
+    padding: 30px;
+    display: flex;
+    margin-top: 10px;
+    width: 730px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.box span{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.inputAndButton {
+    align-items: center;
+    display: flex;
+}
+
+.inputAndButton div {
+    padding-inline-start: 30px;
+}
+
+.inputAndButton #botao{
+    background-color: rgba(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.inputAndButton #botao:hover{
+    background-color: rgba(44, 0, 44, 0.);
+}
+
+.inputAndButton #cep{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.containerAvaliacoes {
+    display: flex;
+    flex-direction: column; 
+}
+
+.containerAvaliacoes #title {
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+}
+
+.estrelasAndText {
+    display: flex;
+    flex-direction: column;
+}
+
+.qimg{
+    display: flex;
+    align-items: center;
+}
+
+.containerAvaliacoes #qtd-estrelas{
+    font-size: 50px;
+    font-weight: bold;
+    color: purple;
+}
+
+.contaiannerAvaliacoes #img-estrela{
+    width: 30px;
+}
+
+.containerAvaliacoes .estrelasAndText{
+   display: flex;
+   align-items: center;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .avaliacoes span{
+    margin-left: 5px;
+ }
+
+.container-barras {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.barra-preencher {
+    width: 200px;
+    height: 10px;
+    background-color: rgb(84, 84, 84);
+    border-radius: 5px;
+}
+
+.barra {
+    z-index: 1;
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background-color: rgb(136, 0, 255);
+    border-radius: 5px;
+}
+
+.barra-tres {
+    z-index: 1;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(136, 0, 255);
+    border-radius: 5px;
+}
+
+table {
+    margin-top: 20px;
+    width: 90%;
+  }
+  
+th {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 5px solid white;
+  }
+
+#tdOne {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.containerInfos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.containerInfos h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+
+
+
+
