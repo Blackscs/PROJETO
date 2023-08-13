@@ -13,209 +13,222 @@
 
     <link rel="stylesheet" href="telaDeCompras.css">
     
-
 </head>
 <body>
-    <script src="telaDeCompras.js"></script>
+  <script src="telaDeCompras.js"></script>
     
-    <header class="header">
+  <header>
 
-        <a href="/"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+      <a href="/"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
 
-        <a href="">
-          <div class="conta">
-              <box-icon name='user' ></box-icon>
-              <i style="color: aliceblue;" class='bx bx-user' ></i>
-              <p>ENTRAR</p>
-          </div>
-        </a>
-
-        <div class="pesquisa">
-            <input id="caixaPesquisa" type="text" placeholder="Encontre seu produto">
+      <a href="">
+        <div class="conta">
+            <box-icon name='user' ></box-icon>
+            <i style="color: aliceblue;" class='bx bx-user' ></i>
+            <p>ENTRAR</p>
         </div>
+      </a>
 
-    </header>
+      <div class="pesquisa">
+          <input id="caixaPesquisa" type="text" placeholder="Encontre seu produto">
+      </div>
 
-    <section class="container">
+  </header>
 
-        <section class="container-img">
-            <img src="IMAGENS/iphone-14-pro-max.png" alt="Iphone 14 Pro Max">
-        </section>
+<main>
 
-        <section class="t-b">
+<section class="container">
 
-            <div class="container-esq">
-                <p>Apple iPhone 14 Pro Max 128GB Roxo-profundo 6,7” 48MP</p>
-            </div>
+  <div class="selecionarCores">
+    <button id="botao-cores" onclick="escolherCorPreto()">
+      <img src="IMAGENS/IphonePreto.png" alt="Iphone Preto">
+    </button>
+    <button id="botao-cores" onclick="escolherCorBranco()">
+      <img src="IMAGENS/IphoneBranco.png" alt="Iphone Prata">
+    </button >
+    <button id="botao-cores" onclick="escolherCorDourado()">
+      <img src="IMAGENS/IphoneDourado.png" alt="Iphone Dourado">
+    </button>
+    <button id="botao-cores" onclick="escolherCorRoxo()">
+      <img src="IMAGENS/IphoneRoxo.png" alt="Iphone Roxo">
+    </button>
+  </div>
+
+  <section class="container-img">
+      <img id="img-principal" src="IMAGENS/IphoneBranco.png" alt="Iphone 14 Pro Max">
+  </section>
+
+  <section class="t-b">
+
+    <div class="container-esq">
+        <p id="textoTitulo">Apple iPhone 14 Pro Max 128GB Roxo-profundo 6,7” 48MP</p>
+    </div>
+
+    <div class="precos">
+        <p id="antes"><s>R$ 10.499,00</s></p>
+        <p id="depois">R$ 7.998,99</p>
+    </div>
     
-            <div class="precos">
-                <p id="antes">R$ 10.499,00</p>
-                <p id="depois">R$ 7.998,99</p>
-            </div>
-            
-            <p>Armazenamento interno</p>
+    <p id="arm-int">Armazenamento interno</p>
 
-            <section class="versoes">
-                <p>1TB</p>
-                <p>128GB</p>
-                <p>256GB</p>
-                <p>512GB</p>
-            </section>
-
-            <div class="container-botao">
-                <button>Comprar agora</button>
-            </div>
-
-        </section>
-        
+    <section class="versoes">
+        <p onclick="TB1()">1TB</p>
+        <p onclick="GB128()">128GB</p>
+        <p onclick="GB256()">256GB</p>
+        <p onclick="GB512()">512GB</p>
     </section>
-        
 
+    <div class="container-botao">
+        <button>Comprar agora</button>
+    </div>
+
+  </section>
     
-                    <div>
-                        <span>Calcule o prazo de entrega:</span>
-                    </div>
-                    
-                    <div class="inputAndButton">
-
-                        <div>
-                            <input id="cep" type="text" placeholder="_____-___" maxlength="8">
-                        </div>
-                    
-                        <div>
-                            <button id="botao">Consultar</button>
-                        </div>
-
-                    </div>
-                    
-            </div>
-        </section>
-
+</section>
         
+<div class="container-box">
+  <div class="box">
+    <div>
+        <span>Calcule o prazo de entrega:</span>
+    </div>
+  
+    <div class="inputAndButton">
+  
+      <div>
+          <input id="cep" type="text" placeholder="_____-___" maxlength="8">
+      </div>
+  
+      <div>
+          <button id="botao">Consultar</button>
+      </div>
+  
+    </div>
+  </div>
+</div>       
 
-        <section class="containerInfos">
+    <section class="containerInfos">
 
-            <h1>Detalhes sobre o produto</h1>
+        <h1>Detalhes sobre o produto</h1>
 
-            <table>
-                <tr>
-                  <th>Informação</th>
-                  <th>Detalhes</th>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Marca</td>
-                  <td>Apple</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Referência</td>
-                  <td>MQ9P3BE/A</td>
-                </tr>
-                <tr>
-                  <td id="tdOne">Modelo</td>
-                  <td>Apple iPhone 14 Pro Max 128GB Branco</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Cor</td>
-                  <td>Branco</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Armazenamento Interno</td>
-                  <td>128GB</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Informações do Armazenamento Interno</td>
-                  <td>A memória total pode variar conforme aplicativos pré-instalados e sistema operacional</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Tipo de Tela</td>
-                  <td>Super Retina XDR</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Tamanho da Tela</td>
-                  <td>OLED de 6.7 in (diagonal)</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Resolução da Tela</td>
-                  <td>2796 x 1290 pixels a 460 ppi</td>
-                </tr>
-                <tr>
-                  <td id="tdOne">Tecnologia</td>
-                  <td>5G</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Atenção</td>
-                  <td>Produto não acompanha fone de ouvido</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Conectividade</td>
-                  <td>LTE, Wi-Fi, Bluetooth, NFC com modo leitura, Cartões expressos</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Processador</td>
-                  <td>A16</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Sistema Operacional</td>
-                  <td>iOS 16</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Quantidade de Chips</td>
-                  <td>eSIM e nano SIM</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Tipo de Chip</td>
-                  <td>O eSIM requer um plano de dados que pode ter restrições a mudanças de operadora e roaming, mesmo após o término do contrato. Consulte sua operadora para obter mais detalhes</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Informações Sobre o Chip</td>
-                  <td>Dual SIM (eSIM e nano SIM). Compatível com Dual eSIM. O iPhone 14 Pro e o iPhone 14 Pro Max não são compatíveis com os cartões micro SIM existentes.</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Características</td>
-                  <td>"• Tela Super Retina XDR de 6,7 polegadas** com tela Sempre Ativa e ProMotion • Dynamic Island, uma nova forma de interação no iPhone • Câmera grande-angular de 48MP para resolução até 4x maior • Modo Cinema, agora em 4K Dolby Vision até 30qps • Modo Ação para vídeos em movimento com mais estabilidade • Tecnologia de segurança—Detecção de Acidente*, que liga para a emergência se você não puder • Bateria para o dia todo e até 29 horas de reprodução de vídeo*** • A16 Bionic, o máximo em chip para smartphone. Rede celular 5G ultrarrápida**** • Durabilidade líder na indústria, com Ceramic Shield e resistência à água***** • iOS 16, com ainda mais maneiras de personalizar, se comunicar e compartilhar******"</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Resolução da Câmera Traseira</td>
-                  <td>Grande-angular de 48 MP. Ultra-angular de 12 MP. Teleobjetiva de 2x de 12 MP. Teleobjetiva de 3x de 12 MP.</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Resolução da Câmera Frontal</td>
-                  <td>12MP</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Sensores</td>
-                  <td>Face ID, scanner LiDAR, barômetro, giroscópio de alto alcance dinâmico, acelerômetro de força g de alta intensidade, sensor de proximidade, dois sensores de luz ambiente</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Certificado Homologado pela Anatel Número</td>
-                  <td>11117-22-01993</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Peso do Produto</td>
-                  <td>240g</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Peso do Produto com Embalagem</td>
-                  <td>436g</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Dimensões do Produto</td>
-                  <td>Largura: 7,76cm Altura: 16,1cm Profundidade: 0,78cm</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Prazo de Garantia</td>
-                  <td>01 ano (3 meses de garantia legal e mais 9 meses de garantia especial concedida pelo fabricante).</td>
-                </tr>
-                <tr>
-                  <td id="tdOne" >Conteúdo da Embalagem</td>
-                  <td>1 iPhone com iOS 16, Cabo de USB-C para Lightning, Documentação</td>
-                </tr>
-              </table>
-              
+        <table>
+            <tr>
+              <th>Informação</th>
+              <th>Detalhes</th>
+            </tr>
+            <tr>
+              <td id="tdOne" >Marca</td>
+              <td>Apple</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Referência</td>
+              <td>MQ9P3BE/A</td>
+            </tr>
+            <tr>
+              <td id="tdOne">Modelo</td>
+              <td>Apple iPhone 14 Pro Max 128GB Branco</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Cor</td>
+              <td>Branco</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Armazenamento Interno</td>
+              <td>128GB</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Informações do Armazenamento Interno</td>
+              <td>A memória total pode variar conforme aplicativos pré-instalados e sistema operacional</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Tipo de Tela</td>
+              <td>Super Retina XDR</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Tamanho da Tela</td>
+              <td>OLED de 6.7 in (diagonal)</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Resolução da Tela</td>
+              <td>2796 x 1290 pixels a 460 ppi</td>
+            </tr>
+            <tr>
+              <td id="tdOne">Tecnologia</td>
+              <td>5G</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Atenção</td>
+              <td>Produto não acompanha fone de ouvido</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Conectividade</td>
+              <td>LTE, Wi-Fi, Bluetooth, NFC com modo leitura, Cartões expressos</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Processador</td>
+              <td>A16</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Sistema Operacional</td>
+              <td>iOS 16</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Quantidade de Chips</td>
+              <td>eSIM e nano SIM</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Tipo de Chip</td>
+              <td>O eSIM requer um plano de dados que pode ter restrições a mudanças de operadora e roaming, mesmo após o término do contrato. Consulte sua operadora para obter mais detalhes</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Informações Sobre o Chip</td>
+              <td>Dual SIM (eSIM e nano SIM). Compatível com Dual eSIM. O iPhone 14 Pro e o iPhone 14 Pro Max não são compatíveis com os cartões micro SIM existentes.</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Características</td>
+              <td>"• Tela Super Retina XDR de 6,7 polegadas** com tela Sempre Ativa e ProMotion • Dynamic Island, uma nova forma de interação no iPhone • Câmera grande-angular de 48MP para resolução até 4x maior • Modo Cinema, agora em 4K Dolby Vision até 30qps • Modo Ação para vídeos em movimento com mais estabilidade • Tecnologia de segurança—Detecção de Acidente*, que liga para a emergência se você não puder • Bateria para o dia todo e até 29 horas de reprodução de vídeo*** • A16 Bionic, o máximo em chip para smartphone. Rede celular 5G ultrarrápida**** • Durabilidade líder na indústria, com Ceramic Shield e resistência à água***** • iOS 16, com ainda mais maneiras de personalizar, se comunicar e compartilhar******"</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Resolução da Câmera Traseira</td>
+              <td>Grande-angular de 48 MP. Ultra-angular de 12 MP. Teleobjetiva de 2x de 12 MP. Teleobjetiva de 3x de 12 MP.</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Resolução da Câmera Frontal</td>
+              <td>12MP</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Sensores</td>
+              <td>Face ID, scanner LiDAR, barômetro, giroscópio de alto alcance dinâmico, acelerômetro de força g de alta intensidade, sensor de proximidade, dois sensores de luz ambiente</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Certificado Homologado pela Anatel Número</td>
+              <td>11117-22-01993</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Peso do Produto</td>
+              <td>240g</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Peso do Produto com Embalagem</td>
+              <td>436g</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Dimensões do Produto</td>
+              <td>Largura: 7,76cm Altura: 16,1cm Profundidade: 0,78cm</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Prazo de Garantia</td>
+              <td>01 ano (3 meses de garantia legal e mais 9 meses de garantia especial concedida pelo fabricante).</td>
+            </tr>
+            <tr>
+              <td id="tdOne" >Conteúdo da Embalagem</td>
+              <td>1 iPhone com iOS 16, Cabo de USB-C para Lightning, Documentação</td>
+            </tr>
+          </table>
+          
 
-        </section>
+    </section>
 
-    </main>
+  </main>
 
 </body>
 </html>

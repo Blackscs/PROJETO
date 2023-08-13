@@ -14,12 +14,12 @@ body {
    height: 100vw;
 }
 
-main {
-    
+main {   
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
     margin-top: 100px;
+    justify-content: center;
 }
 
 a {
@@ -27,7 +27,8 @@ a {
     color: white;
 }
 
-.header {
+header {
+    z-index: 1;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -55,22 +56,44 @@ a {
     border: none;
     padding: 10px;
     border-radius: 20px;
-
 }
 
 .container {
     width: 100%;
-    margin-top: 30px;
     justify-content: center;
     display: flex;  
     flex-wrap: wrap;
 }
 
+.selecionarCores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 0px;
+}
+
+.selecionarCores img {
+    width: 60px;
+    margin: 5px;
+}
+
+.selecionarCores #botao-cores {
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.selecionarCores #botao-cores:hover {
+    transform: scale3d(1.02, 1.02, 1);
+}
+
 .t-b {
+    padding: 30px 0px;
     margin-left: 0px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .container-cores {
@@ -80,7 +103,6 @@ a {
     margin: 30px 0px;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .container-cores img{
@@ -147,6 +169,12 @@ a {
     color: rgb(0, 136, 23);
 }
 
+#arm-int {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 .container-botao button {
     background-color: green;
     border: none;
@@ -170,58 +198,27 @@ a {
 .versoes p {
     border: 2px solid black;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 40px;
-    top: 0;
     transition: top 1s ease;
     font-size: 11px;
+    transition: transform 0.1s ease;
 }
 
 .versoes p:hover {
     position: relative;
-    background-color: rgba(136, 0, 255, 0.2);
+    background-color: rgba(0, 51, 255, 0.3);
     transition: 0.3s;
-    transform: scale3d(1.06, 1.1, 1);
-}
-
-#arm-int {
-    font-size: 14px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-#opt:hover {
+    transform: translate(0%, -5%);
     cursor: pointer;
+    
 }
 
-.precoAndButton {
+
+.container-box {
+    display: flex;
     align-items: center;
-    display: flex;
-    justify-content: space-between
-}
-
-.PIX, .CARTAO {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-#descricao {
-    font-size: 12px;
-}
-
-.metodosPagamento .containerMetodos{
-    background-color: gray;
-}
-
-.metodosPagamento #icone {
-    width: 25px;
-    margin: 10px;
-}
-
-.prazoDeEntrega {
-    display: flex;
     justify-content: center;
-    width: 100vw;
 }
 
 .box {
@@ -268,82 +265,6 @@ a {
     border: none;
     padding: 10px;
     border-radius: 8px;
-}
-
-.containerAvaliacoes {
-    display: flex;
-    flex-direction: column; 
-}
-
-.containerAvaliacoes #title {
-    font-size: 20px;
-    font-weight: bold;
-    color: purple;
-}
-
-.estrelasAndText {
-    display: flex;
-    flex-direction: column;
-}
-
-.qimg{
-    display: flex;
-    align-items: center;
-}
-
-.containerAvaliacoes #qtd-estrelas{
-    font-size: 50px;
-    font-weight: bold;
-    color: purple;
-}
-
-.contaiannerAvaliacoes #img-estrela{
-    width: 30px;
-}
-
-.containerAvaliacoes .estrelasAndText{
-   display: flex;
-   align-items: center;
-}
-
-.avaliacoes {
-    display: flex;
-    flex-direction: column;
- }
-
- .avaliacoes span{
-    margin-left: 5px;
- }
-
-.container-barras {
-    display: flex;
-    position: relative;
-    align-items: center;
-}
-
-.barra-preencher {
-    width: 200px;
-    height: 10px;
-    background-color: rgb(84, 84, 84);
-    border-radius: 5px;
-}
-
-.barra {
-    z-index: 1;
-    position: absolute;
-    width: 150px;
-    height: 10px;
-    background-color: rgb(136, 0, 255);
-    border-radius: 5px;
-}
-
-.barra-tres {
-    z-index: 1;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: rgb(136, 0, 255);
-    border-radius: 5px;
 }
 
 table {

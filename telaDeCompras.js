@@ -18,19 +18,18 @@ function escolherCorDourado() {
 
 function TB1() {
     document.getElementById("arm-int").textContent = "Armazenamento Interno: 1TB";
+    document.getElementById("depois").textContent = "R$ 17.595,00";
 }
 function GB128() {
     document.getElementById("arm-int").textContent = "Armazenamento Interno: 128GB";
+    document.getElementById("depois").textContent = "R$ 8.320,00";
 }
 function GB256() {
     document.getElementById("arm-int").textContent = "Armazenamento Interno: 256GB";
+    document.getElementById("depois").textContent = "R$ 10.432,00";
 }
 function GB512() {
     document.getElementById("arm-int").textContent = "Armazenamento Interno: 512GB";
+    document.getElementById("depois").textContent = "R$ 12.992,00";
 }
-
-function out(){
-    document.getElementById("arm-int").textContent = "Armazenamento Interno:";
-}
-
     

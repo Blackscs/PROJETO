@@ -19,40 +19,107 @@ a {
 header {
     z-index: 1;
     position: fixed;
-    width: 100%;
-    justify-content: center;
-    box-shadow: 0px 0px 50px rgb(0, 0, 0);
-}
-
-.header-elements {
     display: flex;
-    flex-wrap:wrap;
-    background-color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
     align-items: center;
-    padding: 20px 30px;
+    justify-content: space-around;
 }
 
-#header-botao-menu-nav {
+#button-menu {
+    color: white;
     background: none;
     border: none;
     font-size: 30px;
-    color: white;
+    transition: color 0.3s;
 }
 
-#header-botao-menu-nav {
+#button-menu:hover {
+    color: rgb(244, 0, 216);
     cursor: pointer;
 }
 
 #logo {
     width: 80px;
-    margin: 0px 40px;
 }
 
-.pesquisa #caixaPesquisa{
+.conta {
+    color: rgb(247, 247, 247);
+}
+
+.pesquisa{
+    justify-content: center;
+}
+
+.pesquisa > #caixaPesquisa{
     width: 600px;
     border: none;
-    padding: 15px;
-    border-radius: 22px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.container-barraLateral {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 320px;
+    left: -320px;
+    transition: left 0.5s ease;
+    box-shadow: 0px 0px 30px black;
+}
+
+#closeMenuNav{
+    margin: 20px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: white;
+}
+
+#closeMenuNav:hover{
+    cursor: pointer;
+}
+
+.container-barraLateral button{
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: white;
+}
+
+#btnMinhaConta, #btnMeusDados, #btnMeusPedidos, #btnCadastro{
+    color: white;
+    font-size: 15px;
+    margin: 10px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#btnMinhaConta i, #btnMeusDados i, #btnMeusPedidos i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#btnLogin {
+    background-color: tomato;
+    margin: 20px 30px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#btnMinhaConta:hover, #btnCadastro:hover, #btnMeusDados:hover, #btnMeusPedidos:hover {
+    transform: scale3d(1.05, 1.05, 1);
+    cursor: pointer;
+    
 }
 
 .banner {
@@ -152,19 +219,7 @@ header {
     background-color: black;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-}
 
-.icon-menu {
-    color: rgb(2, 2, 2);
-}
-
-.grid {
-    display: flex;
-}
 
 
 

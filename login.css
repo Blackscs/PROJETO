@@ -8,7 +8,7 @@
 
 body {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -16,23 +16,23 @@ body {
 
 .container { 
     width: 350px;
-    background-color: rgb(245, 241, 241);
+    background-color: rgb(255, 255, 255);
     border: 2px solid rgba(0, 0, 0, 0.3);
     padding: 30px;
-    border-radius: 50px;  
+    border-radius: 10px;  
     transition: box-shadow 1s, transform 1s;
     text-align: center;
 }
 
 .container:hover {
-    box-shadow: 0px 0px 100px purple;
+    box-shadow: 0px 0px 40px rgb(255, 255, 255);
     transform: scale(1.01);
 }
 
 #caixa {
     text-decoration: none;
     background: none;
-    border-radius: 40px;
+    border-radius: 5px;
     border: 2px solid rgb(0, 0, 0);
     width: 100%;
     padding: 10px;
@@ -45,16 +45,17 @@ body {
 
 #botao {
     text-decoration: none;
-    background: none;
+    background-color: purple;
     width: 100%;
     text-align: center;
     border: 2px solid rgb(0, 0, 0);
-    border-radius: 50px;
+    border-radius: 5px;
     padding: 10px;
+    color: white;
 }
 
 #botao:hover {
-    background-color: rgb(129, 0, 129);
+    background-color: rgb(69, 0, 69);
     transition: 0.08s;
     cursor: pointer;
 }
@@ -85,4 +86,10 @@ h2 {
     font-size:12px;
     text-align: start;
     margin-top: 20px;
+}
+
+.botaoRegisterOrLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
