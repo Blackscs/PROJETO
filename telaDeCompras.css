@@ -26,7 +26,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
 header {
     z-index: 1;
     position: fixed;
@@ -37,6 +36,19 @@ header {
     padding: 20px;
     align-items: center;
     justify-content: space-around;
+}
+
+#button-menu {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+#button-menu:hover {
+    color: rgb(244, 0, 216);
+    cursor: pointer;
 }
 
 #logo {
@@ -58,6 +70,68 @@ header {
     border-radius: 20px;
 }
 
+.container-barraLateral {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 320px;
+    left: -320px;
+    transition: left 0.5s ease;
+    box-shadow: 0px 0px 30px black;
+}
+
+#closeMenuNav{
+    margin: 20px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: white;
+}
+
+#closeMenuNav:hover{
+    cursor: pointer;
+    color: rgb(244, 0, 216);
+}
+
+.container-barraLateral button{
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: white;
+}
+
+#btnMinhaConta, #btnMeusDados, #btnMeusPedidos, #btnCadastro{
+    color: white;
+    font-size: 15px;
+    margin: 10px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+#btnMinhaConta i, #btnMeusDados i, #btnMeusPedidos i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#btnLogin {
+    background-color: tomato;
+    margin: 20px 30px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#btnMinhaConta:hover, #btnCadastro:hover, #btnMeusDados:hover, #btnMeusPedidos:hover {
+    transform: scale3d(1.05, 1.05, 1);
+    cursor: pointer;
+    
+}
 .container {
     width: 100%;
     justify-content: center;

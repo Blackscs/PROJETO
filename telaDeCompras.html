@@ -17,23 +17,62 @@
 <body>
   <script src="telaDeCompras.js"></script>
     
-  <header>
+  <script src="index.js"></script>
+    
+    <header>
 
-      <a href="/"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+        <button id="button-menu"><i class='bx bx-menu'></i></button>
 
-      <a href="">
-        <div class="conta">
-            <box-icon name='user' ></box-icon>
-            <i style="color: aliceblue;" class='bx bx-user' ></i>
-            <p>ENTRAR</p>
+        <a href="/"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+  
+        <a href="">
+          <div class="conta">
+              <box-icon name='user' ></box-icon>
+              <i style="color: aliceblue;" class='bx bx-user' ></i>
+              <p>ENTRAR</p>
+          </div>
+        </a>
+  
+        <div class="pesquisa">
+            <input id="caixaPesquisa" type="text" placeholder="Encontre seu produto">
         </div>
-      </a>
+  
+    </header>
 
-      <div class="pesquisa">
-          <input id="caixaPesquisa" type="text" placeholder="Encontre seu produto">
-      </div>
+    <nav>
 
-  </header>
+        <div class="container-barraLateral">
+
+            <div class="container-bntCloseMenuNav">
+                <button id="closeMenuNav"><i class='bx bx-menu'></i></button>
+            </div>
+        
+            <button id="btnMinhaConta">
+                <i class='bx bxs-home' ></i>
+                <span>Minha Conta</span>
+            </button>
+
+            <button id="btnMeusDados">
+                <i class='bx bx-user'></i>
+                <span>Meus Dados</span>
+            </button>
+
+            <button id="btnMeusPedidos">
+                <i class='bx bx-cart' ></i>
+                <span>Meus Pedidos</span>
+            </button>
+
+            <button id="btnLogin">
+                <a href="Login.html">LOGIN</a>
+            </button>
+
+            <button id="btnCadastro">
+                <a href="Signin.html">CADASTRO</a>
+            </button>
+
+        </div>
+
+    </nav>
 
 <main>
 
