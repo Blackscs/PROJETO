@@ -15,55 +15,68 @@
 </head>
 <body>
 
-    <img id="logo" src="IMAGENS/logo.png" alt="logo">
+    <img id="background" src="IMAGENS/BACKGROUDIMAGE.jpg" alt="background">
 
-    <div class="container">
+    <header>
+        <a href="index.html"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+    </header>
 
-    <h2>SIGIN</h2>
+    <div id="all">
 
-    <form class="form" action="#" method="post">
-        <div class="form-group">
-        <label for="nome">Nome:</label>
-        <br>
-        <input type="text" id="caixa" name="nome" required>
+        <div class="container">
+
+            <h2>SIGNIN</h2>
+
+            <div id="form">
+
+                <form class="form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <br>
+                        <input type="text" id="caixa" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" id="caixa" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha">Senha (mínimo 8 caracteres):</label>
+                        <br>
+                        <input type="password" id="caixa" name="senha" pattern=".{8,}" title="A senha deve ter pelo menos 8 caracteres" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="data_n">Data de Nascimento:</label>
+                        <br>
+                        <input type="date" id="caixa" name="data_n" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Gênero:</label>
+                        <label>
+                        <input id="radio" type="radio" name="genero" value="masculino" required> Masculino
+                        </label>
+                        <label>
+                        <input id="radio" type="radio" name="genero" value="feminino" required> Feminino
+                        </label>
+                        </div>
+    
+                    <a id="link" href="Login.html">Já possui uma conta?</a>
+    
+                    <div class="botaoRegisterOrLogin">
+                        <a href="index.html" id="botao">REGISTRAR</a>
+                    </div>
+    
+                </form>
+
             </div>
-        <div class="form-group">
-        <label for="email">Email:</label>
-        <br>
-        <input type="email" id="caixa" name="email" required>
-            </div>
-        
-        <div class="form-group">
-            <label for="senha">Senha (mínimo 8 caracteres):</label>
-            <br>
-            <input type="password" id="caixa" name="senha" pattern=".{8,}" title="A senha deve ter pelo menos 8 caracteres" required>
-            </div>
 
-        <div class="form-group">
-            <label for="data_n">Data de Nascimento:</label>
-            <br>
-            <input type="date" id="caixa" name="data_n" required>
-            </div>
-
-        <div class="form-group">
-            <label>Gênero:</label>
-            <label>
-            <input id="radio" type="radio" name="genero" value="masculino" required> Masculino
-            </label>
-            <label>
-            <input id="radio" type="radio" name="genero" value="feminino" required> Feminino
-            </label>
-            </div>
-
-        <a id="link" href="Login.html">Já possui uma conta?</a>
-
-        <div class="botaoRegisterOrLogin">
-            <a href="index.html" id="botao">REGISTRAR</a>
         </div>
 
-  </form>
-
-</div>
+    </div>
 
 </body>
 </html>

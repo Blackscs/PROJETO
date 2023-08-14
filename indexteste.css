@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+  }
+  
+  .containerr {
+    position: relative;
+    display: flex;
+    padding: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    width: 40px;
+    color: #000000;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+    background: linear-gradient(to left, transparent 50%, rgb(0, 0, 0) 200%);
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: center;
+    background: linear-gradient(to right, transparent 50%, rgb(0, 0, 0) 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .item {
+    width: 600px;
+    transition: all 600ms ease-in-out;
+
+  } 
+
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+ 
+  .gallery-wrapper {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  

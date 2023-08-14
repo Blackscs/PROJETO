@@ -32,4 +32,13 @@ function GB512() {
     document.getElementById("arm-int").textContent = "Armazenamento Interno: 512GB";
     document.getElementById("depois").textContent = "R$ 12.992,00";
 }
-    
+
+document.getElementById("button-menu").addEventListener("click", function() {
+    var barraLateral = document.querySelector(".container-barraLateral");
+    barraLateral.style.left = "0"; // Mostra a barra lateral definindo o valor "left" para 0
+});
+
+document.getElementById("closeMenuNav").addEventListener("click", function() {
+    var barraLateral = document.querySelector(".container-barraLateral");
+    barraLateral.style.left = "-320px"; // Mostra a barra lateral definindo o valor "left" para 0
+});

@@ -15,37 +15,44 @@
 </head>
 <body>
 
-    <img id="logo" src="IMAGENS/logo.png" alt="logo">
+    <img id="background" src="IMAGENS/BACKGROUDIMAGE.jpg" alt="background">
+    <header>
 
-    <div class="container">
+        <a href="index.html"><img id="logo" src="IMAGENS/logo.png" alt="logo"></a>
+  
+    </header>
 
-    <h2>LOGIN</h2>
+    <div id="all">
 
-    <form class="form" action="#" method="post">
-        <div class="form-group">
-        
-        <div class="form-group">
-        <label for="email">Email:</label>
-        <br>
-        <input type="email" id="caixa" name="email" required>
-            </div>
-        
-        <div class="form-group">
-            <label for="senha">Senha (mínimo 8 caracteres):</label>
-            <br>
-            <input type="password" id="caixa" name="senha" pattern=".{8,}" title="A senha deve ter pelo menos 8 caracteres" required>
-            </div>
+        <div class="container">
 
-        <a id="link" href="Signin.html">Não possui uma conta?</a>
+            <h2>LOGIN</h2>
 
-        <div class="botaoRegisterOrLogin">
-            <a href="index.html" id="botao">ENTRAR</a>
+            <form class="form" action="#" method="post">
+                <div class="form-group">
+                
+                <div class="form-group">
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="caixa" name="email" required>
+                    </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha (mínimo 8 caracteres):</label>
+                    <br>
+                    <input type="password" id="caixa" name="senha" pattern=".{8,}" title="A senha deve ter pelo menos 8 caracteres" required>
+                    </div>
+
+                <a id="link" href="Signin.html">Não possui uma conta?</a>
+
+                <div class="botaoRegisterOrLogin">
+                    <a href="index.html" id="botao">ENTRAR</a>
+                </div>
+
+            </form>
+
         </div>
 
-
-  </form>
-
-</div>
-
+    </div>
 </body>
 </html>
