@@ -5,13 +5,20 @@
     font-family: 'Poppins';
 }
 
+body{
+    display:flex;
+    flex-direction: column;
+}
+
 main {
     background-color: rgb(246, 246, 246);
     display: flex;
+    flex-direction: column;
     padding: 150px 100px 0px 100px;
     width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -158,16 +165,18 @@ nav {
 }
 
 .container-catalogo {
+    grid-column: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
 }
 
+
 .elementos{
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    min-width: 200px;
+    width: 250px;
+    height: 420px;
     transition: 0.3s ease;
     margin: 20px 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -175,7 +184,7 @@ nav {
     border-radius: 6px;
     background-color: white;
     font-size: 10px;
-    justify-content: center;
+    justify-content: space-between;
     
 }
 
@@ -246,7 +255,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    
 }
 
 .elementos-barra-baixo{
@@ -254,7 +263,8 @@ nav {
 }
 
 .elementos .container-img img{
-   max-height: 12rem;
+    height: 160px; 
+    object-fit: cover; 
 }
 
 .elementos p {
