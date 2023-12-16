@@ -5,9 +5,9 @@
     font-family: 'Poppins';
 }
 
-body{
+html, body{
     width: 100%;
-    overflow-x: hidden;
+    height: 100vh;
 }
 
 main {
@@ -28,9 +28,7 @@ a {
 
 header {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     z-index: 1000; 
     background-color: black;
     display: flex;      
@@ -46,7 +44,8 @@ header {
 #header-elements{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5%;
     width: 80%;
     margin: 20px auto;
     max-width: 1500px;
@@ -152,35 +151,39 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10% 20%;
-};
+ 
+}
 
 .banner img {
-    width: 80%;
+    width: 10px;
     border-radius: 10px;
 }
 
 .container-catalogo {
-    grid-column: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0% 10%;
     justify-content: center;
 }
 
-
 .elementos{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 250px;
-    height: 420px;
+
+    max-height: 500px;
+    max-width: 250px;
+
     transition: 0.3s ease;
-    margin: 20px 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     padding: 10px;
-    border-radius: 6px;
     background-color: white;
     font-size: 10px;
     justify-content: space-between;
+
+    margin-left: 3%;
+    margin-bottom: 3%;
     
 }
 
@@ -214,6 +217,15 @@ nav {
 #elementos-barra-cima li{
     list-style: none;
     line-height: 1.2;
+}
+
+.txto {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    height: 70px;
+    margin-bottom: 2%;
 }
 
 #txtRestam{
@@ -254,19 +266,16 @@ nav {
     
 }
 
-.elementos-barra-baixo{
-    margin-top: 5px;
-}
-
 .elementos .container-img img{
     height: 160px; 
     object-fit: cover; 
 }
 
+
 .elementos p {
     color: rgb(56, 56, 56);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     margin: 15px 0px 5px 5px;
     overflow: hidden;
     max-height: 4.3em;
