@@ -1,18 +1,18 @@
 function escolherCorPreto() {
-    document.getElementById('img-principal').src = 'IMAGENS/IphonePreto.png';
-    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Preto-Espacial 6,7” 48MP";
+    document.getElementById('img-principal').src = 'IMAGENS-COMPRA/IPHONE14PLUSMEIANOITE.jpg';
+    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Preto 6,7” 48MP";
 }
-function escolherCorRoxo() {
-    document.getElementById('img-principal').src = 'IMAGENS/IphoneRoxo.png';
-    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Roxo-Profundo 6,7” 48MP";
+function escolherCorAzul() {
+    document.getElementById('img-principal').src = 'IMAGENS-COMPRA/IPHONE14PLUSAZUL.jpg';
+    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Azul 6,7” 48MP";
 }
 function escolherCorBranco() {
-    document.getElementById('img-principal').src = 'IMAGENS/IphoneBranco.png';
-    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Prata 6,7” 48MP";
+    document.getElementById('img-principal').src = 'IMAGENS-COMPRA/IPHONE14PLUSBRANCO.jpg';
+    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Branco 6,7” 48MP";
 }
-function escolherCorDourado() {
-    document.getElementById('img-principal').src = 'IMAGENS/IphoneDourado.png';
-    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Dourado 6,7” 48MP";
+function escolherCorVermelho() {
+    document.getElementById('img-principal').src = 'IMAGENS-COMPRA/IPHONE14PLUSRED.jpg';
+    document.getElementById('textoTitulo').textContent = "Apple iPhone 14 Pro Max 128GB Vermelho 6,7” 48MP";
 }
 
 

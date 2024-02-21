@@ -11,6 +11,7 @@ html, body{
 }
 
 main {
+    padding-top: 150px;
     background-color: rgb(246, 246, 246);
     width: 100%;
 }
@@ -30,8 +31,28 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000; 
+    height: 100px;
     background-color: black;
     display: flex;      
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonAndLogo {
+    display: flex;
+    min-width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1500px;
 }
 
 #btnMeusPedidos {
@@ -41,14 +62,32 @@ header {
     right: 0;
 }
 
-#header-elements{
+
+#carrinho {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5%;
-    width: 80%;
-    margin: 20px auto;
-    max-width: 1500px;
+    justify-content: space-evenly;
+    background-color: rgb(0, 196, 0);
+    border-radius: 50px;
+    gap: 10px;
+    transition: background-color 0.2s ease;
+    padding: 10px 20px;
+    border: none;
+}
+
+#carrinho:hover {
+    background-color: rgb(2, 151, 2);
+    cursor: pointer;
+}
+
+i {
+    color: white;
+    font-size: 30px;
+}
+
+#txt {
+    color: white;
+    font-size: 14px;
 }
 
 .item-header {
@@ -70,7 +109,7 @@ header {
     cursor: pointer;
 }
 #logo {
-    max-width: 80px;
+    max-width: 45px;
 }
 
 .conta {
@@ -86,64 +125,6 @@ header {
     border: none;
     padding: 10px;
     border-radius: 10px;
-}
-
-nav {
-    position:fixed;
-    z-index: 10001;
-    margin-top: 91px;
-}
-
-.container-nav {
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-    background-color: rgb(255, 0, 0);
-    right: 0;
-    left: 0;
-    position: fixed;
- }
-
-#closeMenuNav{
-    margin: 20px;
-    background: none;
-    border: none;
-    font-size: 40px;
-    color: white;
-}
-
-#closeMenuNav:hover{
-    cursor: pointer;
-    color: rgb(244, 0, 216);
-}
-
-.container-nav button{
-    background: none;
-    border: none;
-    font-size: 1px;
-    color: rgb(0, 0, 0);
-}
-
-#btnMinhaConta, #btnMeusDados, #btnMeusPedidos, #btnCadastro{
-    color: white;
-    font-size: 15px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    transition: transform 0.5s ease-in-out;
-}
-
-#btnMinhaConta i, #btnMeusDados i, #btnMeusPedidos i{
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-#btnLogin {
-    background-color: tomato;
-    margin: 20px 30px;
-    padding: 10px;
-    border-radius: 5px;
-
 }
 
 .banner {
