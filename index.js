@@ -9,6 +9,7 @@ document.getElementById("closeMenuNav").addEventListener("click", function() {
 });
 
 
+
 const controls = document.querySelectorAll(".control"); //selecionando os botoes
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
