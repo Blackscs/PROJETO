@@ -15,9 +15,9 @@ html {
 }
 
 body {
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -40,6 +40,7 @@ header {
     margin-bottom: 10px;
     top: 0;
     align-items: center;
+    
 }
 
 #all {
@@ -100,11 +101,25 @@ header {
     color: rgb(0, 0, 0);
 }
 
-.botaoRegisterOrLogin {
+input[type=submit] {
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.botaoRegisterOrLogin {
+    width: 100%;
+}
+
+#btn-login {
+    background: none;
+    color:white;
+    border: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
     width: 100%;
 }
 
@@ -149,7 +164,6 @@ h2 {
     margin-top: 20px;
 }
 
-
 .bckg {
     display: flex;
     overflow: hidden;
@@ -162,7 +176,7 @@ h2 {
     height: 100vh; 
     background-color: black;
     border-radius: 20% 0 0 200%;
-    background-image: url('LOGIN IMAGES/imagem-login.png'); 
+    background-image: url('../images/LOGIN-IMAGES/imagem-login.png'); 
     background-size: cover; 
     background-repeat: no-repeat; 
 }

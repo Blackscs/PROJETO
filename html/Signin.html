@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="../css/signin.css">
 
     <title>Document</title>
 
@@ -17,24 +17,23 @@
 <body>
 
     <header>
-        <a href="index.html"><img id="logo" src="LOGO/logoTsWhite.png" alt="logo"></a>
+        <a href="../html/index.html"><img id="logo" src="../images/LOGO/logoTsWhite.png" alt="logo"></a>
     </header>
 
     <div class="container">
 
-       
-            <form class="form">
+            <form class="form" action="../php/signinDados.php" method="POST">
 
                 <h2>SIGNIN</h2>
 
                 <div class="otherLogins">
 
                     <a href="https://www.facebook.com/?locale=pt_BR" class="boxIcons">
-                        <img src="LOGIN IMAGES/iconFacebook.png" alt="GoogleImg">
+                        <img src="../images/LOGIN IMAGES/iconFacebook.png" alt="GoogleImg">
                     </a>
 
                     <a href="https://accounts.google.com/?hl=pt-br" class="boxIcons">
-                        <img src="LOGIN IMAGES/iconGoogle.png" alt="GoogleImg">
+                        <img src="../images/LOGIN IMAGES/iconGoogle.png" alt="GoogleImg">
                     </a>
 
                 </div>
@@ -58,12 +57,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="data_n">Data de Nascimento:</label>
-                    <br>
-                    <input type="date" id="caixa" name="data_n" required>
-                </div>
-
-                <div class="form-group">
                     <label>Gênero:</label>
                     <label>
                         <input id="radio" type="radio" name="genero" value="masculino" required> Masculino
@@ -73,15 +66,13 @@
                     </label>
             </div>
 
-            <a id="link" href="Login.html">Já possui uma conta?</a>
+            <a id="link" href="../html/Login.html">Já possui uma conta?</a>
 
             <div class="botaoRegisterOrLogin">
-                <a href="index.html" id="botao">REGISTRAR</a>
+                <input type="submit" value="Registrar">
             </div>
 
         </form>
-
-
 
 </body>
 </html>

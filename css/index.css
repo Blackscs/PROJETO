@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.h1 {
+    display: flex;
+    font-size: 2rem;
+    padding-left: 100px;
+    margin: 50px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-and-logo {
+    display: flex;
+    min-width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+#header-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    width: 100%;
+    margin: 10px auto;
+    max-width: 1500px;
+
+}
+
+#item-menu {
+    border: none;
+    background: none;
+    margin: 10px;
+}
+
+.div-icons-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+i {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    transition: color ease 0.8s;
+}
+
+i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#txt {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.item-header {
+    display: flex;
+    min-width: 10px;
+}
+
+
+#button-menu {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    transition: color 0.3s;
+}
+
+#button-menu:hover {
+    color: rgb(244, 0, 216);
+    cursor: pointer;
+}
+
+#logo {
+    max-width: 70px;
+}
+
+.conta {
+    color: rgb(247, 247, 247);
+}
+
+.pesquisa {
+    justify-content: center;
+}
+
+.pesquisa>#caixaPesquisa {
+    width: 700px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+    left: 0;
+    background-color: rgb(55, 0, 255);
+}
+
+.containerCatalogo {
+    display: flex;
+    width: 90%;
+    max-width: 101rem;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.containerSlides {
+    display: flex;
+    align-items: center;
+    padding: 2.4rem 0;
+    gap: 2rem; 
+    transition: ease 0.4s;    
+    max-width: 1rem;
+}
+
+.button-next, .button-prev{
+    display: flex;
+    cursor: pointer;
+    padding: 0 1rem;
+    font-size: 5rem;
+    height: 100%;
+    align-items: center;
+}
+
+.btnSlider {
+    position: absolute;
+}
+
+.button-prev {
+    left: 0;   
+    background: linear-gradient(to right, white, transparent);
+}
+
+.button-next {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
+
+.slide {
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    font-size: 1rem;
+    min-width: 250px;
+}
+
+#slide-barra-cima {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+#slide-barra-cima .box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    color: red;
+    justify-content: center;
+    width: 21%;
+}
+
+#slide-barra-cima #container-desconto {
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+#slide-barra-cima li {
+    list-style: none;
+    line-height: 1.2;
+}
+
+.txto {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    width: 100%;
+}
+
+.txto p {
+    font-size: 1.1rem;
+}
+
+.txto p::after {
+    content: "…";
+}
+
+#txtRestam {
+    font-size: 0.9rem;
+}
+
+#txt25 {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#txtUnid {
+    font-size: 0.9em;
+}
+
+#desconto {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.slide:hover {
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.47);
+    transform: translate(0, -1%);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.slide .container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.slide .container-img img {
+    max-height: 100px;
+}
+
+.slide p {
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+    margin: 15px 0px 5px 5px;
+    overflow: hidden;
+    max-height: 4.3em;
+}
+
+.slide .container-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.slide #preco-promo {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0px 5px;
+    color: rgb(8, 123, 0);
+}
+
+
+.slide #desc {
+    font-size: 1.2em;
+    margin: 0px 0px 12px 5px;
+    color: black;
+}
+
+.slide #botao {
+    background-color: rgb(254, 24, 24);
+    border: none;
+    color: white;
+    padding: 9px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#botao:hover {
+    background-color: rgb(255, 65, 65);
+    cursor: pointer;
+}
+
+.txt-icon {
+    color: black;
+}
+
+
+
+@media screen and (max-width:10000px) {
+    .pesquisa {
+        display: none;
+    }
+
+    #header-elements {
+        justify-content: space-between;
+    }
+
+    header {
+        overflow-x: hidden;
+    }
+}
